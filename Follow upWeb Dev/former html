@@ -1,0 +1,81 @@
+,<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bbc.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Technology</title>
+</head>
+<body>
+        <nav>
+        <img class="logo" src="images/logo.svg" alt="">
+        <div class="topnav">
+                <a href="#Sign in" class="sign_in">Sign in</a>
+                <a href="#News" class="News">News</a>
+                <a href="#Sport" class="Sport">Sport</a>
+                <a href="#Weather" class="Weather">Weather</a>
+                <a href="#iPlayer" class="iPlayer">iPlayer</a>
+                <a href="#TV" class="TV">TV</a>
+                <a href="#More" class="More">More</a>
+                <form action="/action_page.php">
+                        <button type="submit" style="background-color:#e9e9e9;" ><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder=" Search..." name="search" style="background-color:#e9e9e9;" >
+                        
+                </form>
+                
+        </div> 
+        </nav>
+
+        <header>
+                <img class="logo" src="images/logo.svg" alt="">
+                <div class="topnav">
+                        <a href="#Sign in" class="sign_in">Sign in</a>
+                        <a href="#News" class="News">News</a>
+                        <a href="#Sport" class="Sport">Sport</a>
+                        <a href="#Weather" class="Weather">Weather</a>
+                        <a href="#iPlayer" class="iPlayer">iPlayer</a>
+                        <a href="#TV" class="TV">TV</a>
+                        <a href="#More" class="More">More</a>
+                        <form action="/action_page.php">
+                                <button type="submit" style="background-color:#e9e9e9;" ><i class="fa fa-search"></i></button>
+                                <input type="text" placeholder=" Search..." name="search" style="background-color:#e9e9e9;" >
+                                
+                        </form>
+                        
+                </div> 
+                
+
+
+
+                
+
+                <div class="news">
+                        <a href="#News" class="News">News</a>     
+                </div> 
+    
+                <div class="clear-float" id="toptitle">
+                  <h1>
+            NEWS <span class="alignright"> Find local news</span>
+                        </h1>
+                        </header>
+                </div>
+   <div>
+        <nav>
+                        NEWS
+        </nav>
+    <ul>
+        <li>Home</li>
+        <li>UK</li>
+        <li>World</li>
+        <li>Business</li>
+        <li>Politics</li>
+        <li>Tech</li>
+        <li>Science</li>
+        <li>Health</li>
+        <li>Education</li>
+        <Span class="ewid" ><li>Entertainment & Arts</li></Span>
+        <span><li>Video & Audio</li></span> 
+        <li>More</li>
+    </ul>
+    </div>  
+</body>
+</html>

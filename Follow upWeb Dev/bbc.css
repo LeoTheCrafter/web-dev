@@ -1,0 +1,345 @@
+
+
+                
+
+                body{
+                        margin: 0;
+                        padding: 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                }
+
+                #logo{
+                        margin-top: 6px;
+                        width: 100px;
+                        float: left;
+                        margin-right: 8px;
+                } 
+                
+                #topbar{
+                        width: 1200;
+                        margin: 0 auto;
+                        height: 40px;
+                }
+
+                 #siginimage{
+
+                        margin: 10px 8px;
+                        width: 25px;
+                        float: left;
+                        padding: 0px;
+
+
+
+                }
+
+                #sigintext{
+                        font-weight: bold;
+                        font-size:80%;
+                        position: relative;
+                        top: 15px;
+                        padding-right: 65;
+
+                        
+
+                }
+
+                
+
+           
+                #more-button{
+                        margin-left: 18px;
+                        width: 10px;
+                }
+
+
+
+
+                .topbar-section{
+                        float: left;
+                        border-left: 1px #cccccc solid;
+                        height: 100%;  
+                        
+
+                }
+
+                
+                .topbarmenu{
+                        font-weight: bold;
+                        font-size:80%;
+                        padding: 15 19 0 19;
+                        height: 25;
+                        
+                }
+                
+                #search-box{
+                        background-color: #e4e4e4;
+                        font-weight: bold;
+                        font-size:80%;
+                        border: 0;
+                        padding: 4 ;
+                        margin: 10px 0 10px 10px;
+                        float: left;
+                        
+
+
+                }    
+                #search-icon{
+                       
+                        height: 23px;
+                        margin-top: 10;
+
+                }
+
+                #second-top{
+                        background-color: orangered;
+                        width: auto;
+
+                }
+
+                .clear{
+                        clear: both;
+                }
+
+                #menu-bar-container{
+                        background-color: #bb1819;
+                        width: auto;
+                        height: 60;
+                }
+                
+                #menubar{
+                        width: 1200;
+                        margin: 0 auto;
+                        
+                }
+
+                
+
+                h1{
+                        margin:0;
+                        padding: 0;
+                        color: white;
+                        padding-top: 10;
+                        font-weight: normal;
+
+                }
+
+                
+
+                #menu-bar2{
+                        width: 1200;
+                        margin: 0 auto;
+                }
+
+                #menu-bar-container-2{
+                        background-color: #bb1819;
+                        width: auto;
+                        height: 24;
+                }
+                
+                #menu-bar2 a {
+                        text-decoration:  none;
+                        color: white;
+                        border-right: 1px solid #c77474;
+                        padding-right: 8;
+                        font-size: 40%;
+
+                }
+
+                #menu-bar2 a:hover{
+                        text-decoration:  underline;
+
+                }
+
+                .adjust{
+                        padding-left: 10;
+                }
+
+                #more-arrow{
+                        width: 12;
+                }
+
+                .no-border{
+
+                        border: none !important;
+                }
+
+                .page-container{
+                        
+                        width: 1200;
+                        margin: 0 auto;
+                        margin-top: 10;
+                        
+                }
+
+                #main-article{
+
+                        width:450;
+                        float: left;
+                        
+                }
+
+                .pic1{
+                        padding-top:20;
+                        padding-bottom: 10;
+                        width: 433;
+                        float: left;
+
+                }
+                
+
+                h3{
+                        border-bottom: 2.5px solid #bb1819;
+                        width: 45px !important;
+                        float: left;
+                        padding: 0;
+                        margin: 0;
+                        
+                }
+
+                h2 a {
+                        font-size: 30px;
+                        text-decoration: none;
+                        color: #5a5a5a;
+                        
+                }
+
+                a:hover{
+                        color: #1167a8;
+                        text-decoration: underline;
+                }
+
+                
+
+                #article-summary{
+                        padding-top: 10;
+
+                }
+
+                p{
+                        margin: 0;
+                        font-size: 15px;
+                        color: #5a5a5a;
+                }
+
+                .clock{ 
+                        width: 17;
+                }
+
+                #timeline{
+                        padding-top: 6;
+                        font-size: 15px;
+                        color: #5a5a5a;
+                        
+                }
+
+                #hour{
+                        border-left: 1px solid #5a5a5a;
+                        
+                }
+
+                #hour a {
+
+                        color: #5a5a5a;
+                        text-decoration: none;
+                        
+
+                }
+
+                #hour a:hover{
+                        color: #1167a8;
+                        text-decoration: underline;
+                }
+
+                
+
+                #timeline img{
+                        position: relative;
+                        top: 2;
+                }
+
+                #time-hour{
+                        padding-right: 6;
+                }
+
+                #play{
+                        width: 15;
+                        position: relative;
+                        top: 2;
+                }
+
+                #article-related{
+                        margin-top: 30;
+                        font-weight: bold;
+                }
+
+
+                #ar2{
+                        font-weight: bold;
+                        padding-top: 8;
+                }
+
+                .pic2{
+                        padding-bottom: 10;
+                        width: 215;
+                        float: left;
+
+                }
+                
+                h4{
+                        margin:0px;
+                }
+
+
+                h4 a {
+                        color: #000000;
+                        font-style: 15;
+                        text-decoration: none;
+                }
+
+                .sub-articles{
+
+                        width:215;
+                        margin-top: 45;
+                        float: left;
+                        font-size: 15;
+
+                }
+
+                .sub-articles-sum{
+                        padding-top: 5;
+                        font-size: 15;
+                        color: #5a5a5a;
+
+                }
+
+                .clockp{
+                        padding-top: 5;
+                }
+
+                .sa2{
+                        padding-left: 15;
+                }
+
+                .pic5 {
+                        padding-top: 30;
+                }
+
+                .pic6 {
+                        padding-top: 30;
+                }
+
+                .pic7 {
+                        padding-top: 30;
+                }
+
+
+
+                
+
+
+                
+            
+        
+
+
+               
