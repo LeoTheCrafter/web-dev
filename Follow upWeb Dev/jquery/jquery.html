@@ -1,0 +1,89 @@
+<html>
+    <head>
+
+        <title>jQery</title>
+        <script type="text/javascript" src="jquerymin.js"></script>
+        <style>
+
+            #circle {
+
+                width: 150;
+                height: 150;
+                border-radius: 50%;
+                background-color: green;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- ###### Toggle ###### -->
+
+
+
+        <!-- <p>Hello guys</p>
+
+        <button id="toggle"> toggle </button>
+
+        
+
+        <script type="text/javascript">
+
+            var textShowing = true;
+
+           
+            $('#toggle').click(function() {
+
+                if (textShowing) {
+
+                    $('p').fadeOut(function() {
+
+                        textShowing = false;
+
+                    });
+
+                }
+                else {
+
+                    $('p').fadeIn(function() {
+
+                        textShowing = true;
+
+                    })
+                }
+                
+            })
+
+        </script> -->
+
+        <div id="circle"></div>
+
+        <script>
+            
+            $("#circle").click(function() {
+                
+                $(this).animate({
+                    width:"400",
+                    height:"400",
+                    marginLeft:"100",
+                    marginTop:"100",
+                    backgroundColor: "rgb(20, 23, 56)",
+                    },                    
+                    2000, function() {
+                        $(this).css("background-color", "red");
+                    }
+                );
+                
+            });
+        </script>
+        
+
+
+    </body>
+
+
+
+
+
+</html>
