@@ -1,160 +1,159 @@
 <html>
-  <head>
-    <title>JQuery</title>
 
-    <script type="text/javascript" src="jquerymin.js"></script>
+<head>
+  <title>JQuery</title>
 
-    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+  <script type="text/javascript" src="jquerymin.js"></script>
 
-    <link href="jquery-ui/jquery-ui.css" rel="stylesheet" />
+  <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
 
-    <style type="text/css">
-      body {
-        font-family: sans-serif;
-        padding: 0;
-      }
+  <link href="jquery-ui/jquery-ui.css" rel="stylesheet" />
 
-      #header {
-        width: 100%;
-        background-color: #eeeeee;
-        padding: 5px;
-        height: 26px;
-      }
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      padding: 0;
+    }
 
-      #logo {
-        float: left;
-        font-weight: bold;
-        font-size: 120%;
-      }
+    #header {
+      width: 100%;
+      background-color: #eeeeee;
+      padding: 5px;
+      height: 26px;
+    }
 
-      #buttonContainer {
-        width: 233px;
-        margin: 0 auto;
-        border-radius: none;
-      }
+    #logo {
+      float: left;
+      font-weight: bold;
+      font-size: 120%;
+    }
 
-      .toggleButton {
-        float: left;
-        border: 1px solid grey;
-        padding: 4px;
-        font-size: 90%;
-      }
+    #buttonContainer {
+      width: 233px;
+      margin: 0 auto;
+      border-radius: none;
+    }
 
-      #html {
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-      }
+    .toggleButton {
+      float: left;
+      border: 1px solid grey;
+      padding: 4px;
+      font-size: 90%;
+    }
 
-      #output {
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        border-right: 1px solid grey;
-      }
+    #html {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
 
-      .active {
-        background-color: #e8f2ff;
-      }
+    #output {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right: 1px solid grey;
+    }
 
-      .highlightedButton {
-        background-color: grey;
-      }
+    .active {
+      background-color: #e8f2ff;
+    }
 
-      textarea {
-        resize: none;
-      }
+    .highlightedButton {
+      background-color: grey;
+    }
 
-      .panel {
-        float: left;
-        width: 50%;
-        border-left: none;
-      }
+    textarea {
+      resize: none;
+    }
 
-      iframe {
-        border: none;
-      }
+    .panel {
+      float: left;
+      width: 50%;
+      border-left: none;
+    }
 
-      .hidden {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="header">
-      <div id="logo">
-        codeplayer
-      </div>
-      <div id="buttonContainer">
-        <div class="toggleButton active" id="html">HTML</div>
-        <div class="toggleButton" id="css">css</div>
-        <div class="toggleButton" id="javascript">javascript</div>
-        <div class="toggleButton active" id="output">output</div>
-      </div>
+    iframe {
+      border: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      codeplayer
     </div>
-    <div id="bodyContainer">
-      <textarea id="htmlpanel" class="panel"> <p> hello </p> </textarea>
-
-      <textarea id="csspanel" class="panel hidden"> p {color: green} </textarea>
-
-      <textarea id="javascriptpanel" class="panel hidden">
- alert("hi you") </textarea
-      >
-
-      <iframe id="outpanel" class="panel" src="" frameborder="0"></iframe>
+    <div id="buttonContainer">
+      <div class="toggleButton active" id="html">HTML</div>
+      <div class="toggleButton" id="css">css</div>
+      <div class="toggleButton" id="javascript">javascript</div>
+      <div class="toggleButton active" id="output">output</div>
     </div>
+  </div>
+  <div id="bodyContainer">
+    <textarea id="htmlpanel" class="panel"> <p id="paragraph"> hello </p> </textarea>
 
-    <script type="text/javascript">
-      $(".toggleButton").hover(
-        function () {
-          $(this).addClass("highlightedButton");
-        },
-        function () {
-          $(this).removeClass("highlightedButton");
-        }
-      );
+    <textarea id="csspanel" class="panel hidden"> p {color: green} </textarea>
 
-      $(".toggleButton").click(function () {
-        $(this).toggleClass("active");
+    <textarea id="javascriptpanel" class="panel hidden">
+ document.getElementById("paragraph").innerHTML = "Hello Leo" </textarea>
 
-        $(this).removeClass("highlightedButton");
+    <iframe id="outpanel" class="panel" src="" frameborder="0"></iframe>
+  </div>
 
-        // get id of classes to be hidden
+  <script type="text/javascript">
 
-        var panelId = $(this).attr("id") + "panel";
-
-        $("#" + panelId).toggleClass("hidden");
-
-        // Count number of class that hidden to tell the number class that are active
-
-        var numberOfActivePanels = 4 - $(".hidden").length;
-
-        $(".panel").width($(window).width() / numberOfActivePanels - 10);
-      });
-
-      $(".panel").height($(window).height() - $("#header").height() - 15);
-
-      $(".panel").width($(window).width() / 2 - 10);
-
+    function updateOutput() {
       $("iframe")
-          .contents()
-          .find("html")
-          .html(
-            "<html><head><style type='text/css'>" +
-              $("#csspanel").val() +
-              "</style></head><body>" +
-              $("#htmlpanel").val()
-          );
+        .contents()
+        .find("html")
+        .html(
+          "<html><head><style type='text/css'>" +
+          $("#csspanel").val() +
+          "</style></head><body>" +
+          $("#htmlpanel").val()
+        );
+      document.getElementById.contentWindow.eval($("#javascriptpanel").val());
+    }
+    $(".toggleButton").hover(
+      function () {
+        $(this).addClass("highlightedButton");
+      },
+      function () {
+        $(this).removeClass("highlightedButton");
+      }
+    );
 
-      $("textarea").on("change keyup paste", function () {
-        $("iframe")
-          .contents()
-          .find("html")
-          .html(
-            "<html><head><style type='text/css'>" +
-              $("#csspanel").val() +
-              "</style></head><body>" +
-              $("#htmlpanel").val()
-          );
-      });
-    </script>
-  </body>
+    $(".toggleButton").click(function () {
+      $(this).toggleClass("active");
+
+      $(this).removeClass("highlightedButton");
+
+      // get id of classes to be hidden
+
+      var panelId = $(this).attr("id") + "panel";
+
+      $("#" + panelId).toggleClass("hidden");
+
+      // Count number of class that hidden to tell the number class that are active
+
+      var numberOfActivePanels = 4 - $(".hidden").length;
+
+      $(".panel").width($(window).width() / numberOfActivePanels - 10);
+    });
+
+    $(".panel").height($(window).height() - $("#header").height() - 15);
+
+    $(".panel").width($(window).width() / 2 - 10);
+
+    updateOutput();
+
+    $("textarea").on("change keyup paste", function () {
+      updateOutput();
+    });
+  </script>
+</body>
+
 </html>
